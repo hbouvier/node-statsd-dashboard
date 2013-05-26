@@ -1,0 +1,16 @@
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div ng-controller="GraphsCtrl">
+            <!-- <div class="well"> -->
+                <div class="gridster">
+                    <ul style="list-style-type: none;" >
+                        <li data-row="{{graph.row}}" data-col="{{graph.col}}" data-sizex="1" data-sizey="1" ng-repeat="graph in graphs" nggridster>
+                            <div align="center">{{graph.name}}</div>
+                            <div id="{{graph.key}}"></div>
+                        </li>
+                    </ul>
+                </div>
+            <!-- </div> -->
+		</div>
+	</div>
+</div>

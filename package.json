@@ -1,0 +1,45 @@
+{
+    "author"      : "Henri Bouvier",
+    "name"        : "node-statsd-dashboard",
+    "description" : "An HTML Dashboard for statsd",
+    "version"     : "0.0.1",
+    "repository"  : {
+        "type" : "git",
+        "url"  : "https://github.com/hbouvier/node-statsd-dashboard.git"
+    },
+    "keywords": [
+        "dashboard",
+        "statsd"
+    ],
+    "main" : "./lib/dashboard.js",
+    "bin"  : {
+        "tagger" : "./bin/dashbaord"
+    },
+    "dependencies"         : {
+        "express" : ">= 3.2.0 < 4.0.0",
+        "winston" : "*",
+        "socket.io" : "*",
+        "node-engine" : "latest",
+        "node-options" : ">= 0.0.2",
+        "node-network-monitor" : "latest"
+    },
+    "devDependencies"      : {
+        
+    },
+    "optionalDependencies" : {
+        
+    },
+    "engines"              : {
+        "node" : ">= 0.8.0 < 0.11.0"
+    },
+    "scripts": {
+        "test": "node test/test.js"
+    },
+    "configuration"        : {
+        "name"    : "dashboard",
+        "level"   : "debug",
+        "workers" : 1,
+        "context" : "ws",
+        "port"    : 3000
+    }
+}
